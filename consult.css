@@ -1,0 +1,443 @@
+.top-area{
+    background: #0d3B5E;
+    width: 100%;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.is-sticky .header-area:after{
+    position:absolute;
+    content:'';
+    background: rgba(77,78,84,1);
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    -webkit-transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -ms-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.sticky-wrapper.is-sticky .main-menu .nav a:before{
+    bottom: 17.6px;
+}/*.sticky-wrapper */
+
+/*.logo*/
+.logo a, .logo a:hover, .logo a:focus{
+    color: #fff;
+    font-size:24px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 14px 0px 0;
+    padding: 10px 0 0 0;
+}
+.logo a span{
+    color: #2cdbb5;
+    text-transform: capitalize;
+}
+
+/*.logo*/
+
+/*.main-menu*/
+.main-menu {position:relative;}
+.main-menu ul .nav .navbar-nav {
+    text-align:right;
+    float:none;
+}
+.main-menu .nav li {
+    position:relative;
+    padding: 16px 12px 0px;
+    -webkit-transition:all 0.2s linear;
+    -moz-transition:all 0.2s linear;
+    -ms-transition:all 0.2s linear;
+    -o-transition:all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.main-menu .nav li a{
+    padding: 11px 0 29px;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-weight:500;
+    -webkit-transition: all 0.25s ease-in-out 0s;
+    -moz-transition: all 0.25s ease-in-out 0s;
+    -o-transition: all 0.25s ease-in-out 0s;
+    transition: all 0.25s ease-in-out 0s;
+}
+.main-menu  .nav  li.active a,
+.main-menu  .nav  li a:hover,
+.main-menu .nav  li a:focus{
+    color: #2cdbb5;
+    background-color:transparent;
+}
+.main-menu .nav a:before{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 2px;
+    bottom: -2.4px;
+    left: 0;
+    background: transparent;
+    -webkit-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    
+}
+.main-menu .nav li.active  a:before,
+.main-menu .nav a:hover:before{
+    background: #2cdbb5;
+    width: 100%;
+}
+
+/*.main-menu*/
+
+/* tooggle */
+.main-menu .navbar-toggle {
+    margin-top: 5px;
+    border: 1px solid;
+    font-size: 16px;
+    float:left;
+}
+.main-menu .navbar-toggle {
+    color: #00d8ff;
+}
+.main-menu .navbar-default .navbar-toggle:focus, 
+.main-menu .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+
+.home-border{
+    border-top:2px solid #fff;
+}
+
+/*book-btn*/
+.book-btn {
+	background: #0d5e5a;
+    border: 1px solid #0d5e5a;
+    width: 120px;
+    height: 40px;
+    white-space: nowrap;
+    text-align: center;
+    color: #fff;
+    font-size:14px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    border-radius: 5px;
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.book-btn:hover{
+    color: #fff;
+    background: #00d8d5;
+    border: 1px solid #00d8d5;
+}/*book-btn*/
+
+
+
+.our_services {
+    margin-left:200px;
+    width: 850px;
+    padding: 100px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+fieldset {
+    width: 800px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 80px;
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    width: 600px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+.main-domains {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.domain {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.domain a {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0d3B5E;
+}
+.region-selection {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: auto; /* Set width to auto to allow the elements to appear side by side */
+}
+
+.region-selection label {
+    display: inline-block; /* Change display to inline-block */
+    margin-bottom: 5px;
+    margin-right: 10px; /* Add some right margin between label and select */
+    color: #333;
+    font-weight: bold;
+}
+
+.region-selection select {
+    width: 250px; /* Set a fixed width for the select element */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #0d3B5E;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Hover effect */
+.region-selection select:hover {
+    border-color: #aaa;
+}
+
+/* Focus effect */
+.region-selection select:focus {
+    outline: none;
+    border-color: #0d3B5E; /* Border color when focused */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Box shadow when focused */
+}
+.submit-button {
+    display: inline-block; /* Add this to make the submit button inline */
+    border: none;
+    background-color: #0d5e5a; 
+    color: white;/* Green */
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input.submit-button:hover {
+    background-color: #f0f0f0; /* Background color */
+    color: #ff6969; /* Text color */
+}
+
+
+.domain.selected {
+    background-color: #0d3B5E;
+    color: #fff;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card-text strong {
+    font-weight: bold;
+}
+
+.footer-logo img{
+    width: 150px;
+}
+
+/* Media queries for responsive adjustments */
+
+/* Styles for screens smaller than 768px (tablets and mobile devices) */
+@media only screen and (max-width: 768px) {
+
+    body {
+        padding: 0 10px; /* Add minimal padding on smaller screens */
+        max-width: 360px; /* Adjust max-width to fit smaller screens */
+    }
+
+    .our_services {
+        margin-top: 200px;
+        margin-left : 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 350px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    
+    fieldset {
+        width:500px;
+        margin-top: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border: 1px solid #f9f9f9;
+        border-radius: 5px;
+        width: 300px;
+    }
+
+    
+legend {
+    font-size: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.main-domains {
+    display: block;
+    margin-bottom: 20px;
+    margin: 10px;
+    size: 20px;
+}
+
+.domain {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.domain a {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0d3B5E;
+    size: 10px;
+
+}
+.region-selection {
+    margin-bottom: 20px;
+    margin: 10px;
+    display: block;
+    size: 50px; /* Set width to auto to allow the elements to appear side by side */
+}
+
+.region-selection label {
+    display: block; /* Change display to inline-block */
+    margin-bottom: 5px;
+    margin-right: 10px; /* Add some right margin between label and select */
+    color: #333;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.region-selection select {
+    width:250px; /* Set a fixed width for the select element */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #0d3B5E;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Hover effect */
+.region-selection select:hover {
+    border-color: #aaa;
+}
+
+/* Focus effect */
+.region-selection select:focus {
+    outline: none;
+    border-color: #0d3B5E; /* Border color when focused */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Box shadow when focused */
+}
+.submit-button {
+    display: inline-block; /* Add this to make the submit button inline */
+    border: none;
+    background-color: #0d5e5a; 
+    color: white;/* Green */
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input.submit-button:hover {
+    background-color: #f0f0f0; /* Background color */
+    color: #ff6969; /* Text color */
+}
+
+
+.domain.selected {
+    background-color: #0d3B5E;
+    color: #fff;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 10px;
+    margin-bottom: 8px;
+}
+
+    .footer-logo img {
+        max-width: 100%; /* Make footer logo responsive */
+    }
+
+    .main-menu .navbar-toggle {
+        margin-top: 0; /* Remove top margin on smaller screens */
+        font-size: 12px; /* Decrease font size for smaller screens */
+    }
+
+    .main-menu .nav li {
+        padding: 0 5px; /* Add minimal padding between navigation items on smaller screens */
+    }
+}
+
